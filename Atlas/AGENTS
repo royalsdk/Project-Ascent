@@ -1,0 +1,76 @@
+# Project Ascent Agent Instructions
+
+## Mission
+
+Project Ascent is the five-year educational and professional logbook of
+Joshua "Royal" Goodell.
+
+The handbook documents Royal's development in mathematics, physics,
+programming, engineering, leadership, physical readiness, and astronaut
+candidate preparation.
+
+## Voice
+
+- Professional, motivating, and grounded.
+- Preserve Royal's authentic voice in personal reflections.
+- Avoid exaggerated promises about astronaut selection.
+- Emphasize discipline, knowledge, engineering practice, and measurable growth.
+- Refer to Joshua Goodell as Joshua "Royal" Goodell on formal pages and
+  Royal in mission briefings.
+- Refer to the AI collaborator as Atlas where appropriate.
+
+## Core Motto
+
+"The pursuit of knowledge is the mission."
+
+## Chapter Format
+
+Each educational chapter should normally contain:
+
+1. Mission Brief
+2. Mission Objective
+3. Why This Matters
+4. Prerequisite Knowledge
+5. Core Concepts
+6. Royal's Notes
+7. Worked Examples
+8. Common Mistakes
+9. Engineering or Spaceflight Application
+10. Practice Problems
+11. Mastery Check
+12. Reflection
+13. Mission Completion Criteria
+
+## Editing Rules
+
+- Write chapters in Markdown.
+- Do not overwrite Royal's original notes.
+- Store original notes separately from polished material.
+- Distinguish Royal's words from Atlas-generated explanations.
+- Do not fabricate accomplishments, dates, scores, qualifications, or study hours.
+- Mark missing personal information with a visible placeholder.
+- Keep headings and file naming consistent.
+- Update CHANGELOG.md when adding or substantially revising a chapter.
+- Update MISSION_STATUS.md when a milestone changes.
+- Do not commit classified, controlled, operationally sensitive, or private
+  Navy information.
+- Never place secrets, API keys, personal access tokens, or credentials in
+  repository files.
+
+## Git Workflow
+
+- Create a new branch for every substantial chapter or feature.
+- Use descriptive branch names beginning with `atlas/`.
+- Open a pull request rather than merging directly into main.
+- Summarize what changed, what source notes were used, and what Royal should
+  review.
+- Keep unrelated changes in separate pull requests.
+
+## Source Integrity
+
+Serge Lang's Basic Mathematics and other copyrighted books may be referenced
+and summarized, but do not reproduce substantial textbook passages or complete
+problem sets.
+
+Royal's handwritten notes may be reorganized and edited while preserving their
+meaning.
