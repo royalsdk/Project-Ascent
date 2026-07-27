@@ -1,0 +1,496 @@
+# OBJECTIVES FOR NEXT 4 DAYS.
+# COMPLETE PRACTICAL FACTORS
+# CREATE NOTES AND UPLOAD TO NOTES FOLDER
+#
+
+
+Learning Objectives
+
+By the end of this mission, you should be able to explain:
+
+Why Git exists
+How Git stores history
+The relationship between Git and GitHub
+What branches are
+What commits really are
+Why Pull Requests exist
+How software teams collaborate safely
+How to recover from common mistakes
+How Project Ascent uses Git
+Chapter 1 — Why Git Exists
+Imagine This
+
+You write a 50-page handbook.
+
+Tomorrow you accidentally delete Chapter 4.
+
+Gone.
+
+No backup.
+
+Three months of work disappears.
+
+Git was invented to solve exactly this problem.
+
+It remembers every meaningful version of your project.
+
+Think of Git as a time machine for your work.
+
+Not a cloud drive.
+
+Not a backup service.
+
+A history engine.
+
+Note to Write
+
+Git records the evolution of a project instead of simply storing the latest version.
+
+Chapter 2 — Git vs GitHub
+
+This confuses almost everyone.
+
+Git
+
+Git is software.
+
+It lives on your computer.
+
+It tracks changes.
+
+It doesn't require the internet.
+
+Git is the engine.
+
+GitHub
+
+GitHub is a website.
+
+It stores Git repositories.
+
+It allows collaboration.
+
+It hosts Pull Requests.
+
+It stores Issues.
+
+It shows commit history.
+
+GitHub is built around Git.
+
+Good Analogy
+
+Think of writing a Word document.
+
+Microsoft Word = Git
+
+OneDrive = GitHub
+
+Word edits the file.
+
+OneDrive stores and shares it.
+
+Note to Write
+
+Git is version control software.
+
+GitHub is a hosting and collaboration platform built around Git.
+
+Chapter 3 — Repository
+
+A repository (repo) is the complete project.
+
+Not just today's files.
+
+Everything.
+
+Including:
+
+Every commit
+Every branch
+Every tag
+Every release
+Every version
+
+Project Ascent is one repository.
+
+Note
+
+A repository contains both the project and its complete history.
+
+Chapter 4 — Commits
+
+This is where most beginners misunderstand Git.
+
+A commit is not just "saving."
+
+Think of it as a checkpoint in the story of your project.
+
+Imagine writing a book.
+
+You wouldn't save every keystroke forever.
+
+Instead, you'd say:
+
+"Chapter 2 is complete."
+
+That's a commit.
+
+Every commit has:
+
+an ID (SHA)
+an author
+a timestamp
+a message
+the exact changes
+
+Example:
+
+Commit
+
+7f72c6e
+
+Author:
+Royal
+
+Message:
+Complete Mission 001 Atlas Core
+
+That SHA is unique.
+
+No one else will ever produce that exact commit.
+
+Notes
+
+A commit is an intentional checkpoint.
+
+Every commit tells part of the project's story.
+
+Chapter 5 — Branches
+
+This is one of the most important concepts.
+
+Imagine Project Ascent is a tree.
+
+main
+
+That's the trunk.
+
+You don't experiment on the trunk.
+
+Instead...
+
+You grow a branch.
+
+main
+    │
+    ├── atlas-mission-001
+
+Everything happens there.
+
+If you make mistakes...
+
+No problem.
+
+Main is untouched.
+
+When the work is complete...
+
+Merge.
+
+Real Life
+
+You already did this.
+
+main
+
+↓
+
+atlas-mission-001-atlas-core
+
+↓
+
+Commit
+
+↓
+
+Push
+
+↓
+
+Draft PR
+
+Congratulations.
+
+You have already used branching.
+
+Notes
+
+Branches isolate work.
+
+They allow experimentation without risking the main project.
+
+Chapter 6 — Staging
+
+This is probably Git's strangest concept.
+
+Git has three major areas:
+
+Working Directory
+
+↓
+
+Staging Area
+
+↓
+
+Repository
+
+Imagine packing a suitcase.
+
+Working directory:
+
+Everything in your room.
+
+Staging:
+
+The clothes you've decided to pack.
+
+Commit:
+
+The suitcase is zipped.
+
+Commands
+git add README.md
+
+Moves changes into staging.
+
+git add .
+
+Stages everything.
+
+Notes
+
+The staging area lets me decide exactly what belongs in the next commit.
+
+Chapter 7 — Pull Requests
+
+A Pull Request is not Git.
+
+It's GitHub.
+
+A PR says:
+
+"I'd like these branch changes reviewed before they become part of main."
+
+Think of it like submitting a research paper.
+
+You don't publish immediately.
+
+Someone reviews it.
+
+Project Ascent workflow:
+
+Royal
+
+↓
+
+Create Branch
+
+↓
+
+Commit
+
+↓
+
+Push
+
+↓
+
+Draft PR
+
+↓
+
+Review
+
+↓
+
+Merge
+
+Sound familiar?
+
+You already did it.
+
+Notes
+
+Pull Requests encourage discussion before changes become permanent.
+
+Chapter 8 — Merge
+
+Merging combines histories.
+
+main
+
+↓
+
+Branch
+
+↓
+
+Merge
+
+↓
+
+Updated main
+
+Nothing magical.
+
+Git simply applies the approved history.
+
+Chapter 9 — Status
+
+Atlas's Golden Rule
+
+Before doing anything:
+
+git status
+
+After doing anything:
+
+git status
+
+Before committing:
+
+git status
+
+After committing:
+
+git status
+
+You cannot overuse this command.
+
+Why?
+
+Because Git tells you exactly what it believes.
+
+If Git thinks something is wrong...
+
+Stop.
+
+Read.
+
+Don't guess.
+
+Chapter 10 — Diff
+
+Before every commit:
+
+git diff
+
+Git shows:
+
+Exactly
+
+What
+
+Changed.
+
+No surprises.
+
+Professional developers check diffs constantly.
+
+Mission Exercise
+
+Create a file:
+
+practice.md
+
+Write:
+
+Git Practice
+
+Mission 002
+
+Today I learned...
+
+Now:
+
+git status
+
+Observe.
+
+Then:
+
+git add practice.md
+git status
+
+Observe the difference.
+
+Commit:
+
+git commit -m "Add Git practice file"
+
+Observe again.
+
+Push.
+
+Open a Draft PR.
+
+Congratulations.
+
+You just completed another professional Git workflow.
+
+Recommended Daily Commands
+git status
+git pull --ff-only
+git switch main
+git switch <feature-branch>
+git branch
+git diff
+git add .
+git commit -m "Meaningful message"
+git push
+git log --oneline --graph --decorate --all
+
+Notice that last command. It gives you a compact visual history of your branches and commits. As Project Ascent grows, it'll become one of your favorite ways to understand how the project evolved.
+
+Mission Reflection
+
+At the end of the lesson, answer these questions in your own words:
+
+Why is Git different from simply saving files?
+What problem do branches solve?
+Why is a Pull Request valuable, even if you're working alone?
+What information does git status provide?
+Why should commit messages describe intent instead of just listing changed files?
+How does Project Ascent benefit from using Git instead of storing documents in a single folder?
+Atlas's Advice
+
+Royal, here's something I wish every beginner knew:
+
+Don't try to memorize 100 Git commands.
+
+Instead, build a mental model.
+
+Think of Git as a conversation with your project's history:
+
+status asks: "Where am I?"
+diff asks: "What changed?"
+add says: "Include this in my next checkpoint."
+commit says: "Record this moment in history."
+branch says: "Let's explore safely."
+merge says: "Bring this work back home."
+
+If you understand those ideas, the commands stop feeling like magic words and start feeling like tools.
+
+One More Suggestion for Project Ascent
+
+I think Git deserves its own mission series:
+
+Mission 002 – Git Fundamentals (this lesson)
+Mission 003 – Branching & Merging
+Mission 004 – Resolving Merge Conflicts
+Mission 005 – GitHub Pull Requests & Code Reviews
+Mission 006 – Professional Git Workflows (Rebasing, Tags, Releases, and CI)
+
+By the end of those missions, Git won't just be something you use for Project Ascent—it'll be a professional skill you can carry into any engineering team.
