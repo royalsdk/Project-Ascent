@@ -1,1 +1,25 @@
+# Atlas Changelog
 
+All notable changes to the Atlas Core are recorded here. Dates describe repository changes, not unverified personal accomplishments.
+
+## [Unreleased]
+
+### Added
+
+- Structured Royal's public mission profile, current background, study commitment, fitness routine, self-assessment, and long-term vision.
+- Defined Mission 001 and its completion criteria.
+- Recorded the active Project Ascent phase, focus areas, next milestone, and known gaps.
+- Organized the five-year roadmap into sequential learning and professional-development phases.
+- Added explicit placeholders for information Royal still needs to confirm.
+
+### Changed
+
+- Replaced broken character encoding with readable UTF-8 punctuation.
+- Clarified that roadmap dates are targets and do not represent completed accomplishments.
+- Separated confirmed information from estimates and future intentions.
+
+## July 27, 2026 — Atlas Core Established
+
+- Added the initial Atlas context, rulebook, agent instructions, Royal profile, mission status, current task, roadmap, and changelog files.
+
+> The pursuit of knowledge is the mission.

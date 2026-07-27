@@ -1,6 +1,44 @@
+# Current Task
 
-TASKING
+## Mission 001 — Complete the Atlas Core
 
-Repository and Notes organized
-Algebra 1 proficiency
-Better understanding with GITA
+Status: **Ready for publication**
+
+## Objective
+
+Establish a reliable source of truth that allows Royal and Atlas to resume Project Ascent without depending on a single conversation.
+
+## Scope
+
+- Organize `ROYAL_PROFILE` using only confirmed, non-sensitive information.
+- Record the active phase and mission in `MISSION_STATUS`.
+- Make this file identify one clear current task.
+- Organize the five-year plan in `ROADMAP`.
+- Initialize `CHANGELOG` with the Atlas Core foundation entry.
+
+## Source Material
+
+- `ATLAS_CONTEXT`
+- `ATLAS_RULEBOOK`
+- `AGENTS`
+- Royal's existing entries in the Atlas Core files
+
+## Completion Criteria
+
+- [x] All five Atlas Core files contain structured Markdown.
+- [x] Known facts are preserved without fabricated accomplishments.
+- [x] Missing information is marked for Royal's confirmation.
+- [x] Mission status and change history are synchronized.
+- [x] Changes are committed on an `atlas/` branch.
+- [ ] A draft pull request is opened for Royal's review.
+- [ ] Royal reviews and merges the pull request.
+
+## Next Authorization Needed
+
+After Mission 001 is merged, Royal should choose the first educational mission. The current candidates are:
+
+- Algebra I baseline assessment
+- Algebra I review chapter
+- Git and Codex workflow documentation
+
+No candidate is considered active until Royal selects it.
